@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## General info
+This project is Sabelle Beaute - An ecommerce beauty cosmetic site with all natural and homemade products.
+	
+## Technologies
+Project is created with:
+* Rails version: 2.74
+* React version: 2.33
+* postgreSQL database
+	
+## Setup
+To run this project, install it locally using npm:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ npm install
+$ npm start
+```

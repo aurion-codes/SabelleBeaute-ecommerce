@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
 import Products from './components/Products';
+import Home from './components/Home';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -17,12 +19,16 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Switch>
-        <Route path="/products">
+        <Route path="/Products">
           <Products List products={products}/>
         </Route>
-        <Route path="/">
-          <h1>Products</h1>
+        <Route path="/Home">
+          <Home />
         </Route>
+        <Route path="/">
+          <Navbar/>
+        </Route>
+
       </Switch>
     </div>
   </BrowserRouter>

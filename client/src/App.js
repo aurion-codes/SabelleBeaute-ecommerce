@@ -7,9 +7,9 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/prpducts")
+    fetch("/products")
       .then((r) => r.json())
-      .then((data) => setProducts(data));
+      .then((data) => console.log(data));
   }, []);
 
   return (

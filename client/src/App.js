@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Products from './components/Products';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -9,15 +10,15 @@ function App() {
   useEffect(() => {
     fetch("/products")
       .then((r) => r.json())
-      .then((data) => console.log(data));
+      .then((data) => setProducts(data));
   }, []);
 
   return (
     <BrowserRouter>
     <div className="App">
       <Switch>
-        <Route path="/prducts">
-          <h1>Product List</h1>
+        <Route path="/products">
+          <Products List products={products}/>
         </Route>
         <Route path="/">
           <h1>Products</h1>

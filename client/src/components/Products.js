@@ -1,9 +1,12 @@
 function Products(){
 
     return(
-        <>
-        <h1>List of Products</h1>
-        </>
+        <div>
+            <ul>
+                
+            </ul>
+        </div>
+    
     )
 }
 

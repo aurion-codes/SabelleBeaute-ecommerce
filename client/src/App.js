@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
 import Home from './components/Home';
@@ -19,6 +20,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Switch>
+        {/* <Header /> */}
         <Route path="/Products">
           <Products List products={products}/>
         </Route>

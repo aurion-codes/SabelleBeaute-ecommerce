@@ -5,8 +5,8 @@ function Navbar(){
         <nav>
             <ul>
                 <li>
-                <NavLink to="home" >
-                    Home
+                <NavLink href="/products" >
+                    Products
                     </NavLink>
                 </li>
             </ul>
